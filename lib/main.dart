@@ -104,14 +104,14 @@ class MyHomePage extends StatelessWidget {
         children: [
           FloatingActionButton(
             onPressed: () {
-              context.read<CounterBloc>().add(Decrement());
+              context.read<CounterBloc>().add(const Decrement());
             },
             tooltip: 'Decrement',
             child: const Icon(Icons.remove),
           ),
           FloatingActionButton(
             onPressed: () {
-              context.read<CounterBloc>().add(Increament());
+              context.read<CounterBloc>().add(const Increment());
             },
             tooltip: 'Increment',
             child: const Icon(Icons.add),
